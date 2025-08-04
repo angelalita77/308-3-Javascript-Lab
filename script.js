@@ -87,7 +87,7 @@ console.log(rows);
 // save a the words of one row into an array call cells
 for (row of rows) {
     let [cell1, cell2, cell3, cell4] = row.split(',')
-    console.log(cell1)
+    console.log(cell1, cell2, cell3, cell4);
 }
 
 
