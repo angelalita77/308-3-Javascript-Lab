@@ -84,9 +84,14 @@ let rows = csvData.split('\n');
 console.log(rows);
 
 //for each row of rows
-// save a the words of one row into an array call cells
+// save the words of one row into an array
+// the string is split at the comma and each word is saved in each array index
+// Example: row[0] = row ="ID, Name, Occupation, Age"
+//          row.split(',') = [ID, Name, Occupation, Age]
+//                           [cell1 = ID, cell2 = Name, etc.]
 for (row of rows) {
     let [cell1, cell2, cell3, cell4] = row.split(',')
+    // For each row, it will log the for cells
     console.log(cell1, cell2, cell3, cell4);
 }
 
